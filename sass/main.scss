@@ -1,0 +1,177 @@
+$color-primary: #f5f7ec;
+$color-secondary:rgb(190,164, 148); 
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #f2eee8,  #d4c1a5,  #f2eee8);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row ;
+
+    .nav-lateral{
+        border: 1px solid black;
+        max-width:5%;
+        height: 100vh auto all;  
+        display: initial;
+        align-items: center;
+        justify-content: center;
+
+        .opcoes{
+            margin-top: 50%;
+            margin-left: 3px;
+            margin-right: 4px;
+        }
+
+        a{
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            min-width: 7%;          
+            min-height: 10%;          
+            justify-content: center;
+            vertical-align: middle;
+            align-items: center;
+            border-radius: 100%;
+            padding: 10px 20px;
+            background-color: $color-secondary;
+            transition: all .2s;
+            margin-bottom: 100%;
+
+            &:hover{
+                transform: translateY(-4px) scale(1.03);
+                color: #816839;
+                box-shadow: 0 1rem 2rem rgba(black,.25); 
+            }
+
+            &:active{
+                transform: translateY(4px) scale(1.03);
+            }
+        }
+    }
+
+    .conteudo{
+        width:95%;
+        height: 100vh;  
+        
+        .topo{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            margin-right: 0%;
+        }
+        
+        .input-align{
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        
+        .card{
+            border-radius: 15px;
+            margin: 50px;
+            transition: .6s all;
+
+            &:last-child{
+                margin-bottom: 10px ;
+            }
+
+            &:hover{
+                transform: translateY(-4px) scale(1.03);
+                box-shadow: 0 1rem 2rem rgba(black,.25); 
+            }
+
+            
+
+            .card-body{
+                display: flex;
+                flex-direction: row;
+                
+                .right{
+                    width: 60%;
+                    margin-left: 20px;
+
+                    .titulo{
+                        font-size: 30px;
+                        font-weight: 700;
+                        letter-spacing: 15px;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+                    a{
+                        text-decoration: none;
+                    }
+        
+                    i {
+                        background-color: white;
+                        border-radius: 50%;
+                        border: 1px solid grey;
+                        padding: 10px;
+                    }
+        
+                }
+                
+                .left{
+                    width: 40%;
+                    height: auto;
+                    img{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+        
+                        height: auto; 
+                        width: auto; 
+                        width: 200px; 
+                        height: 200px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+}
+
+// Modal
+
+.modal{
+    &-header{
+        background-image: linear-gradient(to right, #f2eee8,  #d4c1a5);
+    }
+
+    &-footer{
+        background-image: linear-gradient(to left, #f2eee8,  #d4c1a5);
+    }
+}
+
+.button-save, .button-close{
+    border: none;
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px groove #8a632ab7;
+    border-radius: 20px;    
+    transition: .3s all ease-in;
+}
+
+.button-save{
+    background-color: #8a632ab7 ;
+    &:hover{
+        background-color: #f2eee8;
+    }
+}
+
+.button-close{
+    
+    background-color: #f2eee8;
+    &:hover{
+        letter-spacing: 1px;
+        background-color: #8a632ab7 ;
+    }
+}

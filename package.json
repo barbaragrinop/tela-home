@@ -1,0 +1,14 @@
+{
+  "name": "scambio",
+  "version": "1.0.0",
+  "description": "scambio",
+  "main": "index.js",
+  "scripts": {
+    "script": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Barbara",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
